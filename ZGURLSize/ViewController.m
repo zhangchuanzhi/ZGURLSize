@@ -1,13 +1,7 @@
-//
-//  ViewController.m
-//  ZGURLSize
-//
-//  Created by offcn_zcz32036 on 2018/8/15.
-//  Copyright © 2018年 cn. All rights reserved.
-//
+
 
 #import "ViewController.h"
-
+#import "UIImage+ZGImgSize.h"
 @interface ViewController ()
 
 @end
@@ -16,13 +10,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    CGSize size = [UIImage getImageSizeWithURL:@"http://upload-images.jianshu.io/upload_images/2822163-70ac87aa2d2199d1.jpg"];
+    NSLog(@"%f", size.height);
 }
 
 

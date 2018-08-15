@@ -13,6 +13,8 @@
 		237018BC2123D1AA003641AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237018BB2123D1AA003641AA /* Assets.xcassets */; };
 		237018BF2123D1AA003641AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237018BD2123D1AA003641AA /* LaunchScreen.storyboard */; };
 		237018C22123D1AA003641AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 237018C12123D1AA003641AA /* main.m */; };
+		237018CA2123D25F003641AA /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237018C92123D25F003641AA /* ImageIO.framework */; };
+		237018CD2123FAD2003641AA /* UIImage+ZGImgSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 237018CC2123FAD2003641AA /* UIImage+ZGImgSize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		237018BE2123D1AA003641AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		237018C02123D1AA003641AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		237018C12123D1AA003641AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		237018C92123D25F003641AA /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		237018CB2123FAD2003641AA /* UIImage+ZGImgSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZGImgSize.h"; sourceTree = "<group>"; };
+		237018CC2123FAD2003641AA /* UIImage+ZGImgSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZGImgSize.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				237018CA2123D25F003641AA /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				237018B12123D1A7003641AA /* ZGURLSize */,
 				237018B02123D1A7003641AA /* Products */,
+				237018C82123D25E003641AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +69,8 @@
 				237018B32123D1A7003641AA /* AppDelegate.m */,
 				237018B52123D1A7003641AA /* ViewController.h */,
 				237018B62123D1A7003641AA /* ViewController.m */,
+				237018CB2123FAD2003641AA /* UIImage+ZGImgSize.h */,
+				237018CC2123FAD2003641AA /* UIImage+ZGImgSize.m */,
 				237018B82123D1A7003641AA /* Main.storyboard */,
 				237018BB2123D1AA003641AA /* Assets.xcassets */,
 				237018BD2123D1AA003641AA /* LaunchScreen.storyboard */,
@@ -69,6 +78,14 @@
 				237018C12123D1AA003641AA /* main.m */,
 			);
 			path = ZGURLSize;
+			sourceTree = "<group>";
+		};
+		237018C82123D25E003641AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				237018C92123D25F003641AA /* ImageIO.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +161,7 @@
 				237018B72123D1A7003641AA /* ViewController.m in Sources */,
 				237018C22123D1AA003641AA /* main.m in Sources */,
 				237018B42123D1A7003641AA /* AppDelegate.m in Sources */,
+				237018CD2123FAD2003641AA /* UIImage+ZGImgSize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
